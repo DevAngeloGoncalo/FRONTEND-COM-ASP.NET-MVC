@@ -61,7 +61,7 @@ namespace ProjetoMVC.Controllers
             } 
         }
 
-                //Será chamado caso seja acionado o botão Editar
+        //Será chamado caso seja acionado o botão Editar
         [HttpPost]
         public IActionResult Editar(Contato contato)
         {
@@ -89,6 +89,31 @@ namespace ProjetoMVC.Controllers
             {
                 return View(contato);
             }    
+        }
+
+        public IActionResult Deletar(int id)
+        {
+            var contato = _context.Contatos.Find(id);
+
+            if (contato == null)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+            else
+            {
+                return View(contato);
+            }   
+        }
+
+        [HttpPost]
+        public IActionResult Deletar(Contato contato)
+        {
+            var contatoBanco = _context.Contatos.Find(contato.Id);
+            
+            _context.Contatos.Remove(contatoBanco);
+            _context.SaveChanges();
+
+            return RedirectToAction(nameof(Index));  
         }
     }
 }

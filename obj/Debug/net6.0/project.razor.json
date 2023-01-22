@@ -16313,6 +16313,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Documentos\\Cursos\\Digital Inonvation One\\Pottencial .NET Developer\\ProjetoMVC\\Views\\Contato\\Deletar.cshtml",
+      "TargetPath": "Views\\Contato\\Deletar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Documentos\\Cursos\\Digital Inonvation One\\Pottencial .NET Developer\\ProjetoMVC\\Views\\Contato\\Detalhes.cshtml",
       "TargetPath": "Views\\Contato\\Detalhes.cshtml",
       "FileKind": "mvc"

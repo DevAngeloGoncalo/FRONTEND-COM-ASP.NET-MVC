@@ -1,10 +1,10 @@
 @model ProjetoMVC.Models.Contato
 
 @{
-    ViewData["Title"] = "Detalhes do Contato";
+    ViewData["Title"] = "Deletar Contato";
 }
 
-<h1>Detalhes</h1>
+<h1 style="color:red">Deseja realmente deletar o contato? Não pode ser desfeito!</h1>
 
 <div>
     <dl class="row">
@@ -28,5 +28,11 @@
         </dt>
     </dl>
 </div>
-<a asp-action="Editar" asp-route-id="@Model.Id">Editar</a> |
+
+<form asp-action="Deletar">
+    <input type="submit" value="Deletar" class="btn btn-danger">
+</form>
+
+<br>
+
 <a asp-action="Index">Voltar</a>
