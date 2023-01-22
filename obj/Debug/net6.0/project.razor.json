@@ -16328,6 +16328,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Documentos\\Cursos\\Digital Inonvation One\\Pottencial .NET Developer\\ProjetoMVC\\Views\\Contato\\Criar.cshtml",
+      "TargetPath": "Views\\Contato\\Criar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Documentos\\Cursos\\Digital Inonvation One\\Pottencial .NET Developer\\ProjetoMVC\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
