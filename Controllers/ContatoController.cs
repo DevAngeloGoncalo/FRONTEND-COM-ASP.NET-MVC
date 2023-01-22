@@ -76,5 +76,19 @@ namespace ProjetoMVC.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+
+        public IActionResult Detalhes(int id)
+        {
+            var contato = _context.Contatos.Find(id);
+
+            if (contato == null)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+            else
+            {
+                return View(contato);
+            }    
+        }
     }
 }
