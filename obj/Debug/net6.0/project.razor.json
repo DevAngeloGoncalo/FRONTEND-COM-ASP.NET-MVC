@@ -16298,6 +16298,11 @@
   "RootNamespace": "ProjetoMVC",
   "Documents": [
     {
+      "FilePath": "d:\\Documentos\\Cursos\\Digital Inonvation One\\Pottencial .NET Developer\\ProjetoMVC\\Views\\Contato\\Editar.cshtml",
+      "TargetPath": "Views\\Contato\\Editar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Documentos\\Cursos\\Digital Inonvation One\\Pottencial .NET Developer\\ProjetoMVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
