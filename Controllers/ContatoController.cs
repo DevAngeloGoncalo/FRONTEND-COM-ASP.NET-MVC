@@ -3,14 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using ProjetoMVC.Context;
 
 namespace ProjetoMVC.Controllers
 {
     public class ContatoController : Controller
     {
-        public IActionResult Inxex()
+        private readonly AgendaContext _context;
+
+        public ContatoController(AgendaContext context)
         {
-            return View();  
+            _context = context;
+        }
+
+        public IActionResult Index()
+        {
+            //Transformar em uma lista
+            var contatos = _context.Contatos.ToList();
+            return View(contatos);  
         } 
     }
 }
